@@ -23,3 +23,7 @@ app.get('/send', (req, res) =>
 app.get('/routes', (req, res) =>
   res.sendFile(path.join(__dirname, 'public/routes.html'))
 );
+
+app.listen(PORT, () =>
+  console.log(`Example app listening at http://localhost:${PORT}`)
+);
